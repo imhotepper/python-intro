@@ -2,11 +2,11 @@ from ast import arg
 import random 
 import sys
 
-# if (sys.argv.count() > 1):
-#     nr =int( sys.argv[1])
-# else: 
+if (len(sys.argv) > 1):
+    nr =int( sys.argv[1])
+else: 
+    nr = random.randint(3, 9)
 
-nr = random.randint(3, 9)
 print( nr)
 
 if nr % 2 ==0:
